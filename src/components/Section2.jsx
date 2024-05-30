@@ -3,7 +3,7 @@
 function section2() {
   return (
     <div>
-        {/* <div className="grid-section">
+        <div className="grid-section">
             <div className="grid-content one">
                 <div className="grid-text">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minima dicta amet, molestiae aliquam incidunt suscipit recusandae labore ratione doloremque, architecto et illo minus quo tenetur ducimus, voluptatibus repellendus fuga aperiam vel ab! Ipsam corrupti blanditiis dolorum! Officia assumenda rem nam, eveniet enim ad inventore laudantium est illum voluptatem quis.</p>
@@ -129,7 +129,7 @@ function section2() {
             </div>
             </div>
             
-        </div> */}
+        </div>
     </div>
   )
 }

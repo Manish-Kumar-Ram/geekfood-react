@@ -268,8 +268,8 @@ ul #Home {
 
 
 /* gridsections */
-
-/* .grid-section{
+/* 
+.grid-section{
     display: grid;
     gap: 40px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -306,7 +306,129 @@ padding: 8rem;
     justify-self: center;
     align-items: center;
     gap: 20px;
-}  */
+} 
+.grid-section .one{
+  
+} */
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px; /* Adjust the gap between the grid items */
+    padding: 20px; /* Adjust the padding around the grid */
+}
+
+.grid-content {
+    background: #fff; /* Adjust the background color of the grid items */
+    border-radius: 8px; /* Add border radius to the grid items */
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2); /* Add box shadow for a subtle effect */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.grid-content.one {
+    grid-column: span 2; /* Make the first item span 2 columns */
+    grid-row: span 2; /* Make the first item span 2 rows */
+}
+
+.grid-text {
+    padding: 20px;
+}
+
+.divs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.grid-img {
+    flex: 1;
+}
+
+.grid-img img {
+    width: 50px;
+    border-radius: 50px;
+    height: auto;
+    border-radius: 8px; /* Add border radius to images */
+}
+
+.grids {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .grid-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto); /* Allow rows to adjust based on content */
+    }
+
+    .grid-content.one {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .grid-content.one {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1025px) {
+    .grid-section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .grid-content.one {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .grid-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto); /* Allow rows to adjust based on content */
+    }
+
+    .grid-content.one {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .grid-content.one {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
 
 
 .footer {
